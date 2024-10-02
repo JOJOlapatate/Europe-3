@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8205ec663b8b003b79c400fbeafd1a48 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8205ec663b8b003b79c400fbeafd1a48" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8205ec663b8b003b79c400fbeafd1a48 = L.map(
+                "map_8205ec663b8b003b79c400fbeafd1a48",
+                {
+                    center: [48.5, 15.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5f1c51ae91ad03411f541198b07038aa = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8205ec663b8b003b79c400fbeafd1a48);
+        
+    
+            var marker_dc26bfd36f6a8a3568ca85ec4af16fde = L.marker(
+                [43.7102, 7.262],
+                {}
+            ).addTo(map_8205ec663b8b003b79c400fbeafd1a48);
+        
+    
+            var icon_ee069ff3032de0552f66acb09dac4a39 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plane", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_dc26bfd36f6a8a3568ca85ec4af16fde.setIcon(icon_ee069ff3032de0552f66acb09dac4a39);
+        
+    
+        var popup_f6deed2f40d97e355964ca494b64f6ec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7e3a51c51cb85baf1d58607d014fcbbc = $(`<div id="html_7e3a51c51cb85baf1d58607d014fcbbc" style="width: 100.0%; height: 100.0%;">Nice</div>`)[0];
+            popup_f6deed2f40d97e355964ca494b64f6ec.setContent(html_7e3a51c51cb85baf1d58607d014fcbbc);
+        
+
+        marker_dc26bfd36f6a8a3568ca85ec4af16fde.bindPopup(popup_f6deed2f40d97e355964ca494b64f6ec)
+        ;
+
+        
+    
+    
+            var marker_40ab43b4d5a22bbdafc0c022f4101acc = L.marker(
+                [37.9715, 23.7257],
+                {}
+            ).addTo(map_8205ec663b8b003b79c400fbeafd1a48);
+        
+    
+            var icon_09c9f0ee492de21d090b004e89b5644f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_40ab43b4d5a22bbdafc0c022f4101acc.setIcon(icon_09c9f0ee492de21d090b004e89b5644f);
+        
+    
+        var popup_76871847e1485a71d40f9d3c205a481e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_486179f887d7d041350cdeb6367ba5d6 = $(`<div id="html_486179f887d7d041350cdeb6367ba5d6" style="width: 100.0%; height: 100.0%;">Athens - Acropolis</div>`)[0];
+            popup_76871847e1485a71d40f9d3c205a481e.setContent(html_486179f887d7d041350cdeb6367ba5d6);
+        
+
+        marker_40ab43b4d5a22bbdafc0c022f4101acc.bindPopup(popup_76871847e1485a71d40f9d3c205a481e)
+        ;
+
+        
+    
+    
+            var marker_01b9032bbeaf23c3b7897b0a7925adc3 = L.marker(
+                [37.9694, 23.7337],
+                {}
+            ).addTo(map_8205ec663b8b003b79c400fbeafd1a48);
+        
+    
+            var icon_7f1b881b1224ade5ba4d2778ef2485bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_01b9032bbeaf23c3b7897b0a7925adc3.setIcon(icon_7f1b881b1224ade5ba4d2778ef2485bd);
+        
+    
+        var popup_4726f70bffc8dbbc02f11606d7a6c2ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1d5517c4d161f4243cc4a9df04ec44b3 = $(`<div id="html_1d5517c4d161f4243cc4a9df04ec44b3" style="width: 100.0%; height: 100.0%;">Athens - Temple of Olympian Zeus</div>`)[0];
+            popup_4726f70bffc8dbbc02f11606d7a6c2ef.setContent(html_1d5517c4d161f4243cc4a9df04ec44b3);
+        
+
+        marker_01b9032bbeaf23c3b7897b0a7925adc3.bindPopup(popup_4726f70bffc8dbbc02f11606d7a6c2ef)
+        ;
+
+        
+    
+    
+            var marker_f6996bcec5c7fcab3ec7acdf7d1a6a28 = L.marker(
+                [47.5076, 19.0452],
+                {}
+            ).addTo(map_8205ec663b8b003b79c400fbeafd1a48);
+        
+    
+            var icon_153d751bad9a1376a2e9d76f9a29c428 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f6996bcec5c7fcab3ec7acdf7d1a6a28.setIcon(icon_153d751bad9a1376a2e9d76f9a29c428);
+        
+    
+        var popup_36d3722c38552d80fbeee103f9759d17 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fefe60140ead6b516001fe3c2f8e122a = $(`<div id="html_fefe60140ead6b516001fe3c2f8e122a" style="width: 100.0%; height: 100.0%;">Budapest - Parliament</div>`)[0];
+            popup_36d3722c38552d80fbeee103f9759d17.setContent(html_fefe60140ead6b516001fe3c2f8e122a);
+        
+
+        marker_f6996bcec5c7fcab3ec7acdf7d1a6a28.bindPopup(popup_36d3722c38552d80fbeee103f9759d17)
+        ;
+
+        
+    
+    
+            var marker_58a16762ce5eff03e8ed9fcccc783e90 = L.marker(
+                [47.5189, 19.0813],
+                {}
+            ).addTo(map_8205ec663b8b003b79c400fbeafd1a48);
+        
+    
+            var icon_22523a1959afc861d1edb6515242ede2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_58a16762ce5eff03e8ed9fcccc783e90.setIcon(icon_22523a1959afc861d1edb6515242ede2);
+        
+    
+        var popup_17910c53687b5a8309b21ec096323918 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c06a16f99778b23080d64da0cb0f4ce2 = $(`<div id="html_c06a16f99778b23080d64da0cb0f4ce2" style="width: 100.0%; height: 100.0%;">Budapest - Széchenyi Baths</div>`)[0];
+            popup_17910c53687b5a8309b21ec096323918.setContent(html_c06a16f99778b23080d64da0cb0f4ce2);
+        
+
+        marker_58a16762ce5eff03e8ed9fcccc783e90.bindPopup(popup_17910c53687b5a8309b21ec096323918)
+        ;
+
+        
+    
+    
+            var marker_ab5816f69579cdbc40941608a2393c8c = L.marker(
+                [50.0909, 14.4005],
+                {}
+            ).addTo(map_8205ec663b8b003b79c400fbeafd1a48);
+        
+    
+            var icon_84f1c763dc908a55ef2de8ee2d661709 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ab5816f69579cdbc40941608a2393c8c.setIcon(icon_84f1c763dc908a55ef2de8ee2d661709);
+        
+    
+        var popup_27a765ee5ca5f624925517a40de77996 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_59fc8a1ff1dd1001e6905b8ccffae621 = $(`<div id="html_59fc8a1ff1dd1001e6905b8ccffae621" style="width: 100.0%; height: 100.0%;">Prague - Prague Castle</div>`)[0];
+            popup_27a765ee5ca5f624925517a40de77996.setContent(html_59fc8a1ff1dd1001e6905b8ccffae621);
+        
+
+        marker_ab5816f69579cdbc40941608a2393c8c.bindPopup(popup_27a765ee5ca5f624925517a40de77996)
+        ;
+
+        
+    
+    
+            var marker_a533b1a5f1af580b162dfb7f9ea4a8de = L.marker(
+                [50.0865, 14.4114],
+                {}
+            ).addTo(map_8205ec663b8b003b79c400fbeafd1a48);
+        
+    
+            var icon_cdaf22035cfe892ae33aad18f2aa5fb1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a533b1a5f1af580b162dfb7f9ea4a8de.setIcon(icon_cdaf22035cfe892ae33aad18f2aa5fb1);
+        
+    
+        var popup_caa426167eb04763f06295824917f045 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee3f0b0d62e1c979d3a6c4eeb9684c32 = $(`<div id="html_ee3f0b0d62e1c979d3a6c4eeb9684c32" style="width: 100.0%; height: 100.0%;">Prague - Charles Bridge</div>`)[0];
+            popup_caa426167eb04763f06295824917f045.setContent(html_ee3f0b0d62e1c979d3a6c4eeb9684c32);
+        
+
+        marker_a533b1a5f1af580b162dfb7f9ea4a8de.bindPopup(popup_caa426167eb04763f06295824917f045)
+        ;
+
+        
+    
+    
+            var marker_39b647d3ba898899323d610c90b9553c = L.marker(
+                [48.1845, 16.3122],
+                {}
+            ).addTo(map_8205ec663b8b003b79c400fbeafd1a48);
+        
+    
+            var icon_77a4dbb1419d8977422056a896ef87c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_39b647d3ba898899323d610c90b9553c.setIcon(icon_77a4dbb1419d8977422056a896ef87c2);
+        
+    
+        var popup_e23ff9a09ef93af9f25ec748c05d92da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_995c692a01c8d1a8b4756b6b39c34c72 = $(`<div id="html_995c692a01c8d1a8b4756b6b39c34c72" style="width: 100.0%; height: 100.0%;">Vienna - Schönbrunn Palace</div>`)[0];
+            popup_e23ff9a09ef93af9f25ec748c05d92da.setContent(html_995c692a01c8d1a8b4756b6b39c34c72);
+        
+
+        marker_39b647d3ba898899323d610c90b9553c.bindPopup(popup_e23ff9a09ef93af9f25ec748c05d92da)
+        ;
+
+        
+    
+    
+            var marker_f1deb2dac27c282f565749eecf44916e = L.marker(
+                [48.2082, 16.3738],
+                {}
+            ).addTo(map_8205ec663b8b003b79c400fbeafd1a48);
+        
+    
+            var icon_056e01326da84a71f6d474ab1573ee70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f1deb2dac27c282f565749eecf44916e.setIcon(icon_056e01326da84a71f6d474ab1573ee70);
+        
+    
+        var popup_93533391ff0a025cfd90b6b153fa49fa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d3eeb9ec30bb1234b54234282a830f47 = $(`<div id="html_d3eeb9ec30bb1234b54234282a830f47" style="width: 100.0%; height: 100.0%;">Vienna - St. Stephen's Cathedral</div>`)[0];
+            popup_93533391ff0a025cfd90b6b153fa49fa.setContent(html_d3eeb9ec30bb1234b54234282a830f47);
+        
+
+        marker_f1deb2dac27c282f565749eecf44916e.bindPopup(popup_93533391ff0a025cfd90b6b153fa49fa)
+        ;
+
+        
+    
+    
+            var marker_b99dfd357f8869a20e41d3b1c43954d1 = L.marker(
+                [37.9838, 23.7275],
+                {}
+            ).addTo(map_8205ec663b8b003b79c400fbeafd1a48);
+        
+    
+            var icon_4a0c16d8b87b9ab9075a0caef7373c73 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b99dfd357f8869a20e41d3b1c43954d1.setIcon(icon_4a0c16d8b87b9ab9075a0caef7373c73);
+        
+    
+        var popup_0d98bdf19791dc739771d0a4e160cedf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a779de3461ce7cace1dac55541c8950 = $(`<div id="html_6a779de3461ce7cace1dac55541c8950" style="width: 100.0%; height: 100.0%;">2 nights</div>`)[0];
+            popup_0d98bdf19791dc739771d0a4e160cedf.setContent(html_6a779de3461ce7cace1dac55541c8950);
+        
+
+        marker_b99dfd357f8869a20e41d3b1c43954d1.bindPopup(popup_0d98bdf19791dc739771d0a4e160cedf)
+        ;
+
+        
+    
+    
+            var marker_d7f258f1aacba6f5c742096e023c2a1a = L.marker(
+                [47.4979, 19.0402],
+                {}
+            ).addTo(map_8205ec663b8b003b79c400fbeafd1a48);
+        
+    
+            var icon_4d0fe05aa271e112a76be7b1a791a88e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d7f258f1aacba6f5c742096e023c2a1a.setIcon(icon_4d0fe05aa271e112a76be7b1a791a88e);
+        
+    
+        var popup_ae0320a3b8312c8990924d329cb7d9bc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98bd60a19037bab562525b878cc65aef = $(`<div id="html_98bd60a19037bab562525b878cc65aef" style="width: 100.0%; height: 100.0%;">3 nights</div>`)[0];
+            popup_ae0320a3b8312c8990924d329cb7d9bc.setContent(html_98bd60a19037bab562525b878cc65aef);
+        
+
+        marker_d7f258f1aacba6f5c742096e023c2a1a.bindPopup(popup_ae0320a3b8312c8990924d329cb7d9bc)
+        ;
+
+        
+    
+    
+            var marker_2fb744193cd2449cffb9e726e431a0d0 = L.marker(
+                [50.0755, 14.4378],
+                {}
+            ).addTo(map_8205ec663b8b003b79c400fbeafd1a48);
+        
+    
+            var icon_01bb44ee9eb9bd2ef0b6c0be01ca651b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2fb744193cd2449cffb9e726e431a0d0.setIcon(icon_01bb44ee9eb9bd2ef0b6c0be01ca651b);
+        
+    
+        var popup_58c1f6443ba04748b753acb308ba44e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_34182df0f3224e6b25127e69303d3e33 = $(`<div id="html_34182df0f3224e6b25127e69303d3e33" style="width: 100.0%; height: 100.0%;">2 nights</div>`)[0];
+            popup_58c1f6443ba04748b753acb308ba44e3.setContent(html_34182df0f3224e6b25127e69303d3e33);
+        
+
+        marker_2fb744193cd2449cffb9e726e431a0d0.bindPopup(popup_58c1f6443ba04748b753acb308ba44e3)
+        ;
+
+        
+    
+    
+            var marker_c3140ab3f97a7eff114c6b72cbbf2f9e = L.marker(
+                [48.2082, 16.3738],
+                {}
+            ).addTo(map_8205ec663b8b003b79c400fbeafd1a48);
+        
+    
+            var icon_a8d043942588b93af4e6012e4e5a05cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c3140ab3f97a7eff114c6b72cbbf2f9e.setIcon(icon_a8d043942588b93af4e6012e4e5a05cc);
+        
+    
+        var popup_8c284d5267b28afbfe909fc99e52fd20 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6fed68ef8663d6e44109e5ecb6290ff2 = $(`<div id="html_6fed68ef8663d6e44109e5ecb6290ff2" style="width: 100.0%; height: 100.0%;">2 nights</div>`)[0];
+            popup_8c284d5267b28afbfe909fc99e52fd20.setContent(html_6fed68ef8663d6e44109e5ecb6290ff2);
+        
+
+        marker_c3140ab3f97a7eff114c6b72cbbf2f9e.bindPopup(popup_8c284d5267b28afbfe909fc99e52fd20)
+        ;
+
+        
+    
+    
+            var poly_line_54e3a65920778391a1cc0e9c07ba753f = L.polyline(
+                [[43.7102, 7.262], [37.9838, 23.7275], [47.4979, 19.0402], [50.0755, 14.4378], [48.2082, 16.3738]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_8205ec663b8b003b79c400fbeafd1a48);
+        
+</script>
+</html>
